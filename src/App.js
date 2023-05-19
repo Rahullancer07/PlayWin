@@ -21,7 +21,7 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          <Route exact path="/" element={<Login users={userlist} addUsers={setUserList} setLogUser={setLogUser}/>}/>
+          <Route exact path="" element={<Login users={userlist} addUsers={setUserList} setLogUser={setLogUser}/>}/>
           <Route exact path="/register" element={<Registration users={userlist} addUsers={setUserList} setLogUser={setLogUser}/>}/>
           <Route path="/games" element={<Games user={logUser} setLogUser={setLogUser}/>}/>
           <Route path="/scratchCard" element={<ScratchCard/>}/>
