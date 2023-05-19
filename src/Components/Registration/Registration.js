@@ -131,7 +131,7 @@ const Registration = ({ setLogUser, users, addUsers }) => {
 
           <button className='register_btn' type='submit'>Register</button>
           {formError && <span className='error'>{formError}</span>}
-          <button className='login-link-btn' onClick={() => navigate('')}>Already have an account? Login here.</button>
+          <button className='login-link-btn' onClick={() => navigate('/')}>Already have an account? Login here.</button>
         </form>
       </div>
     </div>

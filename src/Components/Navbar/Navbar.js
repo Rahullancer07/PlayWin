@@ -6,7 +6,7 @@ const Navbar = ({ user , setLogUser }) => {
   const navigate = useNavigate();
   const handleUserLogout = () => {
     setLogUser({});
-    navigate('');
+    navigate('/');
   }
   return (
     <div>
