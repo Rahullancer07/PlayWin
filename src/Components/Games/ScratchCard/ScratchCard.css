@@ -1,0 +1,56 @@
+.scratchCardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 0px;
+  padding: 0px;
+  min-height: 100vh;
+  background-image: url("../../../Images/navb.jpg");
+}
+
+.backBtn {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+}
+
+.backBtn img {
+  height: 90px;
+  width: 90px;
+}
+
+.ScratchCard__Canvas {
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid gold;
+}
+
+.scratchedDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reward_container {
+  height: 450px;
+  width: 350px;
+  border-radius: 20px;
+  background-size: cover;
+  border: 1px solid gold;
+}
+.reward {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 50px;
+  font-weight: 500;
+  backdrop-filter: blur(0px);
+}
+.reward_text {
+  font-size: 60px;
+}

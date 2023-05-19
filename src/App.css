@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono&display=swap');
+
+body {
+    margin: 0px;
+}
+
+.App {
+    margin: 0px;
+    text-align: center;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    min-height: 100vh;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(149,149,149,1) 100%);
+    color: white;
+    font-family: 'Chivo Mono', monospace;
+}
+
