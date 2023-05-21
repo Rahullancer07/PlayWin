@@ -71,6 +71,7 @@ const Registration = ({ setLogUser, users, addUsers }) => {
         name: fullName,
         email: email,
         password: pass,
+        rewards : 0
       };
       setLogUser(newUser);
       // Add the new user to the user list
