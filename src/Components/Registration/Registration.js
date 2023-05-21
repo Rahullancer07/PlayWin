@@ -81,8 +81,8 @@ const Registration = ({ setLogUser, users, addUsers }) => {
       setEmail('');
       setPass('');
 
-      // Log the updated user list
-      console.log('User List:', users);
+      // // Log the updated user list
+      // console.log('User List:', users);
       navigate('/games');
     }
 

@@ -12,6 +12,7 @@ const Navbar = ({ user , setLogUser }) => {
     <div>
       <nav className="navbar">
         <h1 className="navbar_username">{user.name}</h1>
+        <h2>Total Rewards  : {user.rewards}</h2>
         <button
           className="navbar_logoutBtn"
           onClick={handleUserLogout}

@@ -3,9 +3,10 @@ import './SpinWheel.css';
 import backIcon from '../../../Images/left-arrow.png';
 import { useNavigate } from 'react-router-dom';
 
-const SpinWheel = () => {
+const SpinWheel = ({user, setLogUser}) => {
     const navigate = useNavigate();
     const [rotation, setRotation] = useState(0);
+    const [prize, setPrize] = useState(0);
     const reward = useRef(500);
     const [rotated, setRotated] = useState(false);
 
@@ -13,6 +14,14 @@ const SpinWheel = () => {
         setRotation((prevAngleRotate) => prevAngleRotate + Math.random() * 3600);
         setTimeout(() => {
             setRotated(true);
+            setPrize(reward.current)
+            const updateUser = {
+                name: user.name,
+                email: user.email,
+                password: user.password,
+                rewards: user.rewards + reward.current
+              }
+              setLogUser(updateUser);
         }, 5000);
     }
     let value = rotation % 360;
@@ -76,7 +85,7 @@ const SpinWheel = () => {
                 </div>
             </div>
             }
-            {rotated && <div className='reward'> Your Reward : {reward.current}$</div>}
+            {rotated && <div className='reward'> Your Reward : {prize}$</div>}
         </div>
 
     )

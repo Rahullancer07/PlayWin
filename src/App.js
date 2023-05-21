@@ -13,6 +13,7 @@ function App() {
       name: 'Rahul Yadav',
       email: 'ydv.rahul3108@gmail.com',
       password: 'rahul3108',
+      rewards : 20 
     }
   ]);
   const [logUser , setLogUser] = useState([]);
@@ -24,8 +25,8 @@ function App() {
           <Route exact path="/" element={<Login users={userlist} addUsers={setUserList} setLogUser={setLogUser}/>}/>
           <Route exact path="/register" element={<Registration users={userlist} addUsers={setUserList} setLogUser={setLogUser}/>}/>
           <Route path="/games" element={<Games user={logUser} setLogUser={setLogUser}/>}/>
-          <Route path="/scratchCard" element={<ScratchCard/>}/>
-          <Route path="/spinWheel" element={<SpinWheel/>}/>
+          <Route path="/scratchCard" element={<ScratchCard user={logUser} setLogUser={setLogUser}/>}/>
+          <Route path="/spinWheel" element={<SpinWheel user={logUser} setLogUser={setLogUser}/>}/>
         </Routes>
       </Router>
     </div>
